@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import React from 'react';
+import CardTrilhas from './components/CardTrilhas';
 
 function App() {
-  
-
   return (
-    <>
-      <h1>Projeto Limpo</h1>
-    </>
-  )
+    <div className="App">
+      <CardTrilhas
+        nome="Trilha do Gravatá"
+        cidade="Florianópolis"
+        estado="SC"
+        duracao="1 horas"
+        trajeto="Circular"
+        dificuldade="Moderada"
+        tipo="Caminhada"
+        criador="Maycom Pires"
+        imagem={"../images/trilha-do-gravata.jpg"}
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;
